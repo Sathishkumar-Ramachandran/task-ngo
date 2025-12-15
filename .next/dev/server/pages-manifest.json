@@ -1,0 +1,7 @@
+{
+  "/": "pages/index.js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/admin/dashboard": "pages/admin/dashboard.js",
+  "/bulk-upload": "pages/bulk-upload.js"
+}
