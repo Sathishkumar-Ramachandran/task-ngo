@@ -13,7 +13,7 @@ export default function ReportForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/api/reports', formData);
+      await axios.post('/api/reports', formData);
       alert('Report submitted!');
       setFormData({ ngoId: '', month: '', peopleHelped: '', eventsConducted: '', fundsUtilized: '' });
     } catch (error) {

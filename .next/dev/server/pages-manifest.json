@@ -3,5 +3,8 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/admin/dashboard": "pages/admin/dashboard.js",
+  "/api/dashboard": "pages/api/dashboard.js",
+  "/api/reports/job-status/[id]": "pages/api/reports/job-status/[id].js",
+  "/api/reports/upload": "pages/api/reports/upload.js",
   "/bulk-upload": "pages/bulk-upload.js"
 }

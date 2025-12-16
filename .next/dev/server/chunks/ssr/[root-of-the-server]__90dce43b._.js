@@ -34,7 +34,7 @@ function JobProgress({ jobId }) {
     (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
         const interval = setInterval(async ()=>{
             try {
-                const res = await __TURBOPACK__imported__module__$5b$externals$5d2f$axios__$5b$external$5d$__$28$axios$2c$__esm_import$29$__["default"].get(`http://localhost:3001/api/reports/job-status/${jobId}`);
+                const res = await __TURBOPACK__imported__module__$5b$externals$5d2f$axios__$5b$external$5d$__$28$axios$2c$__esm_import$29$__["default"].get(`/api/reports/job-status/${jobId}`);
                 setProgress(res.data.progress);
                 setStatus(res.data.state);
                 if (res.data.state === 'completed' || res.data.state === 'failed') {
@@ -129,7 +129,7 @@ function BulkUpload() {
         const formData = new FormData();
         formData.append('file', file);
         try {
-            const res = await __TURBOPACK__imported__module__$5b$externals$5d2f$axios__$5b$external$5d$__$28$axios$2c$__esm_import$29$__["default"].post('http://localhost:3001/api/reports/upload', formData);
+            const res = await __TURBOPACK__imported__module__$5b$externals$5d2f$axios__$5b$external$5d$__$28$axios$2c$__esm_import$29$__["default"].post('/api/reports/upload', formData);
             setJobId(res.data.jobId);
         } catch (error) {
             console.error('Upload failed', error);

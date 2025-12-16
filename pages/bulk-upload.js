@@ -14,7 +14,7 @@ export default function BulkUpload() {
     formData.append('file', file);
 
     try {
-      const res = await axios.post('http://localhost:3001/api/reports/upload', formData);
+      const res = await axios.post('/api/reports/upload', formData);
       setJobId(res.data.jobId);
     } catch (error) {
       console.error('Upload failed', error);

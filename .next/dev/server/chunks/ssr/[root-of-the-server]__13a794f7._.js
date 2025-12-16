@@ -158,7 +158,7 @@ function AdminDashboard() {
     const [data, setData] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
     const [month, setMonth] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])('');
     const fetchData = (selectedMonth)=>{
-        let url = 'http://localhost:3001/api/dashboard';
+        let url = '/api/dashboard';
         if (selectedMonth) {
             url += `?month=${selectedMonth}`;
         }

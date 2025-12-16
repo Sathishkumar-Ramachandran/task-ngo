@@ -8,7 +8,7 @@ export default function JobProgress({ jobId }) {
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
-        const res = await axios.get(`http://localhost:3001/api/reports/job-status/${jobId}`);
+        const res = await axios.get(`/api/reports/job-status/${jobId}`);
         setProgress(res.data.progress);
         setStatus(res.data.state);
         

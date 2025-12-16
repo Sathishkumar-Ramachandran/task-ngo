@@ -488,7 +488,7 @@ function ReportForm() {
     const handleSubmit = async (e)=>{
         e.preventDefault();
         try {
-            await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('http://localhost:3001/api/reports', formData);
+            await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/api/reports', formData);
             alert('Report submitted!');
             setFormData({
                 ngoId: '',

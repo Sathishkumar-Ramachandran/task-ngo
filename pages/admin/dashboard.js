@@ -7,7 +7,7 @@ export default function AdminDashboard() {
   const [month, setMonth] = useState('');
 
   const fetchData = (selectedMonth) => {
-    let url = 'http://localhost:3001/api/dashboard';
+    let url = '/api/dashboard';
     if (selectedMonth) {
       url += `?month=${selectedMonth}`;
     }

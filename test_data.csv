@@ -1,0 +1,5 @@
+ngo_id,month,people_helped,events_conducted,funds_utilized
+NGO_TEST_1,2023-01,100,5,10000
+,2023-01,50,2,5000
+NGO_TEST_2,2023-01,200,10,20000
+NGO_TEST_3,,150,7,15000

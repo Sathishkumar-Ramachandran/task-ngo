@@ -1,2 +1,9 @@
-[00:00:07.191] Server  LOG      ✓ Ready in 4.6s
-[00:00:51.343] Server  LOG      ○ Compiling / ...
+[00:00:01.214] Server  LOG      ✓ Ready in 781ms
+[00:00:12.743] Server  LOG     Connected to SQLite database at "D:\\Task\\task-ngo\\ngo.db"
+[00:00:12.745] Server  LOG     Database tables initialized (SQLite)
+[00:00:12.866] Server  LOG     Processing job 1 with file: "uploads\\fe3007a8ca08db3828e77a942dd6326b"
+[00:00:12.879] Server  LOG     Parsed 4 rows from CSV.
+[00:00:12.900] Server  ERROR   Error processing row 2: "Missing ngo_id or month"
+[00:00:12.913] Server  ERROR   Error processing row 4: "Missing ngo_id or month"
+[00:00:12.914] Server  LOG     Job 1 completed. Processed: 2, Failed: 2
+[00:00:18.610] Server  LOG     Database tables initialized (SQLite)

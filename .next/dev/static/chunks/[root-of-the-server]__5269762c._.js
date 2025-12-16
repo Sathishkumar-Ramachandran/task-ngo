@@ -485,7 +485,7 @@ function JobProgress({ jobId }) {
             const interval = setInterval({
                 "JobProgress.useEffect.interval": async ()=>{
                     try {
-                        const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get(`http://localhost:3001/api/reports/job-status/${jobId}`);
+                        const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get(`/api/reports/job-status/${jobId}`);
                         setProgress(res.data.progress);
                         setStatus(res.data.state);
                         if (res.data.state === 'completed' || res.data.state === 'failed') {
@@ -585,7 +585,7 @@ function BulkUpload() {
         const formData = new FormData();
         formData.append('file', file);
         try {
-            const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('http://localhost:3001/api/reports/upload', formData);
+            const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/api/reports/upload', formData);
             setJobId(res.data.jobId);
         } catch (error) {
             console.error('Upload failed', error);

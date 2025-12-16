@@ -18,6 +18,10 @@ self.__BUILD_MANIFEST = {
     "/_app",
     "/_error",
     "/admin/dashboard",
+    "/api/dashboard",
+    "/api/reports",
+    "/api/reports/job-status/[id]",
+    "/api/reports/upload",
     "/bulk-upload"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
